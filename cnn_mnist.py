@@ -14,11 +14,8 @@ from models import tiny_resnet, lenet5, alexnet, batch_norm, pure_conv
 
 # Global parameters
 batch_size = 64
-num_epochs = 5
+num_epochs = 50
 num_classes = 10
-# num_classes = 27
-img_width = 32
-img_height = 48
 image_dim = 28
 input_shape = (image_dim, image_dim, 1)
 train_dir = 'figures_monkbrill/train_cor'
@@ -103,10 +100,10 @@ callbacks_list = [checkpoint]
 
 # Data augmentation
 gen = ImageDataGenerator(rotation_range=8,
-                         width_shift_range=0.08,
-                         shear_range=0.3,
-                         height_shift_range=0.08,
-                         zoom_range=0.08)
+                         width_shift_range=0.1,
+                         shear_range=0.2,
+                         height_shift_range=0.1,
+                         zoom_range=0.1)
 test_gen = ImageDataGenerator()
 
 train_generator = gen.flow(x_train, y_train, batch_size=batch_size)
