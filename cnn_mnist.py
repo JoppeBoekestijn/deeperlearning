@@ -10,7 +10,8 @@ from keras.preprocessing.image import ImageDataGenerator
 from tflearn.data_utils import image_preloader
 from PIL import Image
 from keras.callbacks import ModelCheckpoint
-from models import tiny_resnet, lenet5, alexnet, batch_norm, pure_conv
+from models import tiny_resnet, lenet5, alex_net
+from models import batch_norm, pure_conv, alex_net_original
 
 # Global parameters
 batch_size = 64
@@ -41,7 +42,7 @@ def load_mnist():
 
 x_train, x_test, y_train, y_test = load_mnist()
 
-model = lenet5()
+model = batch_norm()
 
 # checkpoint
 filepath = "weights.best.hdf5"

@@ -1,0 +1,40 @@
+lenet5standard:
+Epoch 00050: val_acc did not improve from 0.99359 (epoch 44)
+Test loss: 0.026169982329008235
+Test accuracy: 0.9922
+alexnetstandard:
+Epoch 00050: val_acc did not improve from 0.98978 (epoch 39)
+Test loss: 0.29607613498310004
+Test accuracy: 0.9802
+tinyresnetstandard
+Epoch 00050: val_acc did not improve from 0.89613 (epoch 29)
+Test loss: 3.9796536476135254
+Test accuracy: 0.3173
+pureconvstandard:
+Epoch 00050: val_acc did not improve from 0.99499 (epoch 46)
+Test loss: 0.02722377425790437
+Test accuracy: 0.9949
+batch_normstandard:
+Epoch 00050: val_acc improved from 0.99309 to 0.99319, saving model to weights.best.hdf5 (epoch 50)
+Test loss: 0.021133432560837537
+Test accuracy: 0.9932
+pure_conv_tanh:
+Epoch 00050: val_acc did not improve from 0.99219 (epoch 19)
+Test loss: 0.8157403352737427
+Test accuracy: 0.9884
+pure_conv_sigmoid:
+Epoch 00050: val_acc did not improve from 0.98898 (epoch 29)
+Test loss: 1.4716262096405028
+Test accuracy: 0.9862
+batch_normtanh:
+Epoch 00050: val_acc did not improve from 0.98958 (epoch 42)
+Test loss: 0.03552225761422888
+Test accuracy: 0.9885
+batch_normsigmoid:
+Epoch 00050: val_acc did not improve from 0.99159 (epoch 42)
+Test loss: 0.032966054345341396
+Test accuracy: 0.9892
+batch_normstandard_dropout (in second to last dense layer):
+Epoch 00050: val_acc did not improve from 0.99339 (epoch 42)
+Test loss: 0.027042324141402285
+Test accuracy: 0.9911
