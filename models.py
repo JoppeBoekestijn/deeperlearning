@@ -249,7 +249,7 @@ def batch_norm():
     model.add(Dropout(0.5))
     model.add(Dense(10))
     model.add(Activation('softmax'))
-    model.compile(loss='categorical_crossentropy', optimizer='adagrad', metrics=['accuracy'])
+    model.compile(loss='categorical_crossentropy', optimizer='rmsprop', metrics=['accuracy'])
 
     return model
 
@@ -277,7 +277,7 @@ def pure_conv():
     model.add(Flatten())
     model.add(Activation('softmax'))
 
-    model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+    model.compile(loss='categorical_crossentropy', optimizer='adagrad', metrics=['accuracy'])
 
     return model
 

@@ -38,3 +38,14 @@ batch_normstandard_dropout (in second to last dense layer):
 Epoch 00050: val_acc did not improve from 0.99339 (epoch 42)
 Test loss: 0.027042324141402285
 Test accuracy: 0.9911
+batch_normstandard_dropout_adagrad:
+Epoch 00050: val_acc did not improve from 0.99209
+Test loss: 0.026886066346418738
+Test accuracy: 0.9916
+batch_normstandard_dropout_rmsprop
+Epoch 00050: val_acc did not improve from 0.99169
+Test loss: 0.053056412871284736
+Test accuracy: 0.9892
+Pure conv standard rmsprop
+0.99339
+pure conv standard adagrad

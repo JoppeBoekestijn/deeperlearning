@@ -42,7 +42,7 @@ def load_mnist():
 
 x_train, x_test, y_train, y_test = load_mnist()
 
-model = batch_norm()
+model = pure_conv()
 
 # checkpoint
 filepath = "weights.best.hdf5"
