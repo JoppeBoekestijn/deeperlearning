@@ -23,7 +23,9 @@ x_test = x_test.astype('float32')
 x_train /= 255
 x_test /= 255
 
+print(x_train[0].type)
 y_train = keras.utils.to_categorical(y_train, num_classes)
+print(y_train[0:10])
 y_test = keras.utils.to_categorical(y_test, num_classes)
 
 # Initialize model
@@ -44,12 +46,12 @@ model.compile(loss=keras.losses.categorical_crossentropy,
               metrics=['accuracy'])
 
 # Run model
-model.fit(x_train, y_train,
-          batch_size=batch_size,
-          epochs=epochs,
-          verbose=1,
-          validation_data=(x_test, y_test))
+# model.fit(x_train, y_train,
+#           batch_size=batch_size,
+#           epochs=epochs,
+#           verbose=1,
+#           validation_data=(x_test, y_test))
 
-score = model.evaluate(x_test, y_test, verbose=0)
-print('Test loss:', score[0])
-print('Test accuracy:', score[1])
+# score = model.evaluate(x_test, y_test, verbose=0)
+# print('Test loss:', score[0])
+# print('Test accuracy:', score[1])
